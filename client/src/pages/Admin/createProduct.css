@@ -93,17 +93,23 @@
     background-color: rgb(44, 44, 44);
     border-radius: 15px;
     padding: 20px;
-    margin: 20px;
+    margin: 40px;
 }
 
 
 .prhead {
     font-size: larger;
     font-family: Rubik;
+    margin-left: 10px;
+}
+.infohead{
+    font-family: Rubik;
+    font-weight: 500;
 }
 
+
 .stat {
-    width: 200px;
+    width: 250px;
     margin: 20px;
 }
 .prinfo {
@@ -133,3 +139,65 @@
         margin: 20px;
     }
 }
+
+.ant-select .ant-select-arrow {
+    color: rgb(255, 255, 255);
+}
+
+.ant-select-dropdown .ant-select-item-option-content {
+    color: black;
+}
+
+:where(.css-dev-only-do-not-override-mzwlov).ant-select-single.ant-select-lg.ant-select-open .ant-select-selection-item {
+    color: black;
+}
+
+.ant-empty-normal .ant-empty-description{
+    color: white;
+}
+
+.ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder:hover>th, :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder:hover>td, :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder {
+    background:#313131;
+}
+
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector{
+    background-color: #1f1f1f;
+    color: white
+}
+:where(.css-dev-only-do-not-override-mzwlov).ant-select-single.ant-select-lg.ant-select-open .ant-select-selection-item {
+    color: #878787;
+}
+
+
+
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector{
+    background-color: #1f1f1f;
+    color: white
+}
+:where(.css-dev-only-do-not-override-mzwlov).ant-input::placeholder {
+    color: rgb(102, 102, 102);
+}
+.ant-input-outlined {
+    background-color: #1f1f1f;
+    color: white
+};
+
+:where(.css-dev-only-do-not-override-mzwlov).ant-input-outlined:hover {
+    border-color: #4096ff;
+    background-color: #313131;
+}
+:where(.css-dev-only-do-not-override-mzwlov).ant-input-outlined:focus, :where(.css-dev-only-do-not-override-mzwlov).ant-input-outlined:focus-within {
+    border-color: #41855b;
+    box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+    outline: 0;
+    color: white;
+    background-color: #1f1f1f;
+}
+
+
+:where(.css-dev-only-do-not-override-1okl62o).ant-input-outlined:hover {
+    border-color: #047000;
+    background-color: #1f1f1f;
+}
+
+

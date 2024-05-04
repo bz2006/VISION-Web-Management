@@ -21,7 +21,7 @@ const Products = () => {
         key: data["_id"],
         image: data["images"][0],
         model: data["name"],
-        mrp: data["mrp"],
+        mrp: "₹"+data["mrp"]+".00",
         inventory: data["InStock"]
       })))
       setSpinning(false)
@@ -132,7 +132,7 @@ const Products = () => {
         <>
 
           <Popconfirm
-            title="Delete Market Place"
+            title="Delete Product"
             description="Are you sure to delete this Product?"
             onConfirm={() => handleDelete(record["key"])}
             okText="Yes"
