@@ -1,0 +1,25 @@
+[33m7a46966[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mserver/main[m[33m)[m HEAD@{0}: commit: debug16/4/mail
+[33m59da08f[m HEAD@{1}: reset: moving to HEAD^
+[33mbdef28a[m HEAD@{2}: reset: moving to HEAD^
+[33m20338f9[m HEAD@{3}: reset: moving to HEAD^
+[33m618cf09[m HEAD@{4}: reset: moving to HEAD^
+[33mac68987[m HEAD@{5}: commit: debug
+[33m618cf09[m HEAD@{6}: commit: debug
+[33m20338f9[m HEAD@{7}: commit: debug
+[33mbdef28a[m HEAD@{8}: commit: debug 16/4/mail
+[33m59da08f[m HEAD@{9}: commit: debug RN/cart
+[33m92c25f2[m HEAD@{10}: commit: debug 1
+[33mb2f3a74[m HEAD@{11}: commit: adrs debug
+[33mac7f66e[m HEAD@{12}: commit: FINAL
+[33m2396616[m HEAD@{13}: pull --tags server main: Merge made by the 'ort' strategy.
+[33m1c47486[m HEAD@{14}: commit: responsive 01
+[33m49b6e7c[m HEAD@{15}: commit: updates 11.03
+[33mb9bb75b[m HEAD@{16}: commit: payment gateway
+[33m8ce7c4f[m HEAD@{17}: commit: Address CRUD
+[33m8ab1c05[m HEAD@{18}: commit: Address get/create
+[33m9e2a797[m HEAD@{19}: commit: user dashboard
+[33m29baed1[m HEAD@{20}: commit: main
+[33mcf19c0f[m HEAD@{21}: commit: cart sync to db added
+[33ma80ed02[m HEAD@{22}: Branch: renamed refs/heads/main to refs/heads/main
+[33ma80ed02[m HEAD@{24}: Branch: renamed refs/heads/master to refs/heads/main
+[33ma80ed02[m HEAD@{26}: commit (initial): first commit

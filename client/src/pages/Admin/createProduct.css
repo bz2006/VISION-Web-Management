@@ -1,0 +1,135 @@
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    border-style: dashed;
+    border: 2px dashed rgb(208, 208, 208);
+    background-color: #141414;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.image {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.prdele {
+    display: none;
+}
+
+.overlay{
+    width: 160px;
+    height: 160px;
+    background-color: rgba(22, 22, 22, 0.459);
+    border-radius: 7px;
+    display: none;
+    justify-content: center;
+    
+    z-index: 99;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.primg {
+    width: 160px;
+    border-radius: 10px;
+}
+.image:hover {
+
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: white;
+
+    .prdele {
+        color: rgb(0, 0, 0);
+        position: absolute;
+        z-index: 99;
+    }
+    .overlay{
+        display: block;
+        display: flex;
+        width: 190px;
+        align-items: center;
+    position: absolute;
+    .prdele {
+        display: block;
+        color: white;
+    }
+    }
+   
+    .prdele:hover {
+        display: block;
+        color: red;
+    }
+}
+
+.upimg {
+    min-width: 820px;
+    min-height: 340px;
+    overflow: hidden;
+    border: 1px solid white;
+    border-color: white;
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+}
+
+.infodiv{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-color: white;
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.prhead {
+    font-size: larger;
+    font-family: Rubik;
+}
+
+.stat {
+    width: 200px;
+    margin: 20px;
+}
+.prinfo {
+
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.prgrid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.prcat {
+    width: 350px;
+    height: 400px;
+    border: 1px solid white;
+    border-color: white;
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+
+    .catsel {
+        width: 200px;
+        margin: 20px;
+    }
+}
