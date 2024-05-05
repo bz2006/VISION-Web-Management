@@ -1,0 +1,88 @@
+.maindiv {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-color: white;
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+    padding: 30px;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.orddet {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-color: white;
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+    overflow: hidden;
+    height: fit-content;
+}
+.statussel{
+    width: 160px;
+    margin-right: 20px;
+}
+
+.status {
+    border: 1px solid white;
+    border-color: white;
+    background-color: rgb(44, 44, 44);
+    border-radius: 15px;
+    margin-left: 30px;
+    padding: 10px;
+    height: 500px;
+    width: 330px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.adrs {
+    font-size: 13px;
+    font-family: Rubik;
+    font-weight: 500;
+    margin: 0;
+}
+
+.adrshead {
+    font-family: rubik;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.custname1 {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.custname2 {
+    font-family: Rubik;
+    font-weight: 500;
+    margin: 0;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
