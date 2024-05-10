@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { message, Button, Input, Spin, Select, Checkbox, spin } from "antd";
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { DeleteOutlined } from "@ant-design/icons";
 import "./Admindashboard.css"
 import "./createProduct.css"
 import HeaderComp from "../../components/header";
@@ -152,7 +151,7 @@ const UpdateProduct = () => {
                           }
                         })()}
                         <div className="overlay">
-                          <FontAwesomeIcon icon={faTrashCan} className="prdele" onClick={() => deleteHandler(image)} />
+                          <DeleteOutlined  className="prdele" onClick={() => deleteHandler(image)} />
                         </div>
                       </div>
                     );

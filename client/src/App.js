@@ -17,21 +17,26 @@ import UpdateProduct from "./pages/Admin/updateproducts";
 import OrderDetails from "./pages/Admin/orderDetails";
 
 
-axios.defaults.baseURL = "http://localhost:3000"
+axios.defaults.baseURL = "http://localhost:5000"
 axios.defaults.withCredentials = true
 
 
 
 function App() {
 
+  let Access =false
+
   const authData = JSON.parse(localStorage.getItem("auth"));
+  if (authData) {
+    Access=authData["success"]
+  }
+
   return (
     <AuthProvider>
        <GlobalStyle />
       <>
         <Routes>
-          {authData === null ? (
-            // <Route path="/signup" element={<Signup />} />
+          {authData === null && Access === false ? (
             <Route path="*" element={<Login />} />
           )
             :

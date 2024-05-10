@@ -69,7 +69,7 @@ const HeaderComp = () => {
     const AddnewAdmin = async () => {
         try {
             console.log(newadusername, newademail, newadpassword);
-            const res = await axios.post("/api/v1/auth/signup", { username:newadusername,email:newademail,password:newadpassword });
+            const res = await axios.post("http://localhost:3001/api/v1/auth/signup", { username:newadusername,email:newademail,password:newadpassword });
             if (res && res.data.success) {
                 message.success("New admin Added");
                 setnewademail("")
@@ -89,7 +89,7 @@ const HeaderComp = () => {
 
 const GetUser = async () => {
     try {
-        const user = await axios.get(`/vm-api/v1/users/get-user/${auth.user._id}`)
+        const user = await axios.get(`http://localhost:3001/vm-api/v1/users/get-user/${auth.user._id}`)
         setusername(user.data.user.username)
         setemail(user.data.user.email)
     } catch (error) {
@@ -100,7 +100,7 @@ const GetUser = async () => {
 
 const updtaename = async () => {
     try {
-        await axios.post(`/vm-api/v1/users/update-username/${auth.user._id}`, username);
+        await axios.post(`http://localhost:3001/vm-api/v1/users/update-username/${auth.user._id}`, username);
         GetUser()
         message.success("Username Updated")
     } catch (error) {
@@ -110,7 +110,7 @@ const updtaename = async () => {
 
 const UpdatePass = async () => {
     try {
-        await axios.post(`/vm-api/v1/users/update-pass/${auth.user._id}`, password);
+        await axios.post(`http://localhost:3001/vm-api/v1/users/update-pass/${auth.user._id}`, password);
         GetUser()
         message.success("Password Updated")
 
@@ -134,7 +134,7 @@ return (
                 </div>
                 <div>
                     <Button className='navbtn' href='/'>Home</Button>
-                    <Button className='navbtn' href='https://bz-vision-web.visionwoodenclocks.com/dashboard/manage.vision/admin'>Co - Manage</Button>
+                    <Button className='navbtn' href='http://localhost:3000'>Co - Manage</Button>
                     <Button className='navbtn' href='/products'>Products</Button>
                     <Button className='navbtn' href='/create-product'>Create Product</Button>
                     <Button className='navbtn' href='/orders'>Orders</Button>

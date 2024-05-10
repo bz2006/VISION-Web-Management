@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { DeleteOutlined } from "@ant-design/icons";
 import { message, Button, Input, Spin, Select, Checkbox } from "antd";
 import "./Admindashboard.css"
 import "./createProduct.css"
@@ -121,7 +120,7 @@ const CreateProduct = () => {
                       <div key={index} className="image">
                         <img src={URL.createObjectURL(image)} alt="upload" className="primg" />
                         <div className="overlay">
-                          <FontAwesomeIcon icon={faTrashCan} className="prdele" onClick={() => deleteHandler(image)} />
+                          <DeleteOutlined  className="prdele" onClick={() => deleteHandler(image)} />
                         </div>
                       </div>
 

@@ -6,12 +6,11 @@ import authRoute from "./routes/authRoute.js"
 import cors from "cors"
 import bodyParser from 'body-parser';
 import categoryRoute from "./routes/categoryRoute.js"
-import razorpayRoutes from "./routes/rzppaymentRoute.js"
 import productRoute from "./routes/productRoute.js"
 import usersRoute from "./routes/usersRoute.js"
-import cartRoute from "./routes/cartRoute.js"
 import OrderRoutes from "./routes/orderRoute.js";
 import { sendwelcomemail, sendEmail ,sendOTP} from "./middlewares/nodemailerMiddleware.js";
+import AnalyticsRoutes from"./routes/AnalyticsRoutes.js"
 
 
 dotenv.config();
@@ -21,8 +20,12 @@ dotenv.config();
 const app = express()//express
 connectdb();//Database
 
+const corsOptions = {
+  origin: ['http://localhost:4000','http://localhost:3000'],
+  credentials: true,
+};
 
-app.use(cors())
+app.use(cors(corsOptions));
 app.use(morgan("dev"))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}));
@@ -33,10 +36,9 @@ app.use("/api/v1/auth",authRoute)
 app.use("/api/v1/category", categoryRoute);
 app.use(express.static('public'));
 app.use("/api/v1/product", productRoute);
-app.use("/api/v1/cart", cartRoute);
 app.use("/api/v1/users", usersRoute);
-app.use("/api/v1/razorpay", razorpayRoutes); 
 app.use("/api/v1/orders", OrderRoutes); 
+app.use("/w-vm-api/v1/analytics", AnalyticsRoutes);
 
 app.post('/send-email', sendEmail);
 app.post('/send-welcome-mail', sendwelcomemail);
@@ -46,7 +48,7 @@ app.get("/", (req, res) => {
     res.send("<h1>Welcome to VISION!</h1>");
   });
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
     console.log('****Server Started on '+process.env. DEV_MODE +" Mode PORT:"+ PORT+"****")
 })
