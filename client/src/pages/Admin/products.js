@@ -153,7 +153,7 @@ const Products = () => {
         <h2 style={{ margin: "50px", fontFamily: "Rubik", fontWeight: "400" }}> Store Products</h2>
       </div>
       <div className="table-container">
-        <Table columns={prcolumns} dataSource={products} style={{ width: "fit-content", fontSize: "50px" }} />
+        <Table columns={prcolumns} pagination={{ pageSize: 5 }} dataSource={products} style={{ width: "fit-content", fontSize: "50px" }} />
       </div>
 
     </>

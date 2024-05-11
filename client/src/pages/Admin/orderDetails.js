@@ -131,7 +131,7 @@ const OrderDetails = () => {
         <div style={{display:"flex",flexDirection:"column"}}>
           <div className="items">
             <div className="table-container">
-              <Table columns={ordercolumns} pagination={false} dataSource={orderproducts} style={{ fontSize: "50px" }} />
+              <Table columns={ordercolumns} pagination={{ pageSize: 5 }} dataSource={orderproducts} style={{ fontSize: "50px" }} />
             </div>
 
 

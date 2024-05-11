@@ -50,3 +50,21 @@
     color: rgb(10, 98, 0);
     background: rgba(0, 0, 0, 0.06);
 }
+
+:where(.css-dev-only-do-not-override-1okl62o).ant-pagination .ant-pagination-item a {
+    display: block;
+    padding: 0 6px;
+    color: rgb(255 255 255 / 88%);
+}
+
+:where(.css-dev-only-do-not-override-1okl62o).ant-pagination .ant-pagination-prev button, :where(.css-dev-only-do-not-override-1okl62o).ant-pagination .ant-pagination-next button {
+    color: rgb(255 255 255);
+    cursor: pointer;
+    user-select: none;
+}
+
+:where(.css-dev-only-do-not-override-1okl62o).ant-pagination .ant-pagination-item-active {
+    font-weight: 600;
+    background-color: #00851d;
+    border-color: #000000;
+}

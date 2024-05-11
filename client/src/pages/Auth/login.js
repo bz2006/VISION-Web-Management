@@ -23,6 +23,7 @@ function Login() {
 
 
     useEffect(() => {
+        message.info("Login to continue to Web Manage Console")
         const authData = JSON.parse(localStorage.getItem("auth"));
         const redirectUrl = sessionStorage.getItem("redirectUrl");
 

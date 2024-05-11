@@ -4,7 +4,6 @@ import {
   createProductController, deleteproduct, getSingleProduct, getAllProducts, updateProducts,getProducts
 } from "../controllers/productController.js";
 import { upload } from "../middlewares/aws-s3Middleware.js";
-import { isAdmin, requireSignup } from "../middlewares/authMiddleware.js";
 
 const router = express.Router();
 
@@ -35,8 +34,7 @@ router.get("/cat-products/:id", getProducts);
 
 
 //get single products
-router.get("/getsingle-product/:id", requireSignup,
-  isAdmin, getSingleProduct);
+router.get("/getsingle-product/:id", getSingleProduct);
 
 //get single product Page
 router.get("/product-page/:id", getSingleProduct);

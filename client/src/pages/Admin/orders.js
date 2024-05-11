@@ -133,7 +133,7 @@ const Orders = () => {
         <h2 style={{ margin: "50px", fontFamily: "Rubik", fontWeight: "400" }}>Orders</h2>
       </div>
       <div className="table-container">
-        <Table columns={ordercolumns} dataSource={allorders} style={{ width: "fit-content", fontSize: "50px" }} />
+        <Table columns={ordercolumns} pagination={{ pageSize: 5 }} dataSource={allorders} style={{ width: "fit-content", fontSize: "50px" }} />
       </div>
 
     </>
